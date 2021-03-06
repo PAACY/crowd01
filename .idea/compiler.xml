@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="atguigu_common_util" />
+        <module name="atguigu_common_reserve" />
+        <module name="atguigu_admin_component" />
+        <module name="atguigu_admin_entity" />
+        <module name="atguigu_admin_webUi" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
