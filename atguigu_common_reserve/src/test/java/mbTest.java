@@ -1,6 +1,5 @@
 import org.junit.Test;
 import org.mybatis.generator.api.MyBatisGenerator;
-import org.mybatis.generator.api.ProgressCallback;
 import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.exception.InvalidConfigurationException;
@@ -16,37 +15,35 @@ import java.util.List;
 public class mbTest {
     @Test
     public void test(){
-        List<String> warnings = new ArrayList();
+        List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
         File configFile = new File("D:\\编程\\PROJECT1\\untitledorc\\atguigu_common_reserve\\src\\main\\java\\mbg.xml");
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = null;
-
         try {
             config = cp.parseConfiguration(configFile);
-        } catch (IOException var13) {
-            var13.printStackTrace();
-        } catch (XMLParserException var14) {
-            var14.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (XMLParserException e) {
+            e.printStackTrace();
         }
-
         DefaultShellCallback callback = new DefaultShellCallback(overwrite);
         MyBatisGenerator myBatisGenerator = null;
 
         try {
             myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
-        } catch (InvalidConfigurationException var12) {
-            var12.printStackTrace();
+        } catch (InvalidConfigurationException e) {
+            e.printStackTrace();
         }
 
         try {
-            myBatisGenerator.generate((ProgressCallback)null);
-        } catch (SQLException var9) {
-            var9.printStackTrace();
-        } catch (IOException var10) {
-            var10.printStackTrace();
-        } catch (InterruptedException var11) {
-            var11.printStackTrace();
+            myBatisGenerator.generate(null);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

@@ -74,7 +74,11 @@
             <artifactId>atguigu_common_reserve</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.crowd1</groupId>
+            <artifactId>atguigu_common_util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

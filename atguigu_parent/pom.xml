@@ -176,6 +176,11 @@
             <version>${hamcrest.core.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.7</version>
+        </dependency>
 
         <!-- 日志相关 -->
         <dependency>
@@ -355,12 +360,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.mybatis.generator</groupId>
-            <artifactId>mybatis-generator-core</artifactId>
-            <version>1.3.7</version>
-        </dependency>
-
-        <dependency>
             <groupId>aopalliance</groupId>
             <artifactId>aopalliance</artifactId>
             <version>${aopalliance.version}</version>
@@ -500,5 +499,11 @@
             <version>${jedis.version}</version>
         </dependency>
     </dependencies>
-
+    <modules>
+        <module>../atguigu_admin_entity</module>
+        <module>../atguigu_admin_webUi</module>
+        <module>../atguigu_admin_component</module>
+        <module>../atguigu_common_reserve</module>
+        <module>../atguigu_common_util</module>
+    </modules>
 </project>

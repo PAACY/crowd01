@@ -10,11 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>atguigu_parent</module>
-        <module>atguigu_admin_webUi</module>
-        <module>atguigu_admin_component</module>
-        <module>atguigu_admin_entity</module>
-        <module>atguigu_common_reserve</module>
-        <module>atguigu_common_util</module>
+
     </modules>
 
 
