@@ -133,8 +133,6 @@
         <maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
         <maven.resources.plugin.version>2.6</maven.resources.plugin.version>
         <maven-war-plugin.version>2.1.1</maven-war-plugin.version>
-
-        <atguigu.spring.security.version>4.2.10.RELEASE</atguigu.spring.security.version>
     </properties>
 
     <build>
@@ -303,12 +301,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>${springframework.version}</version>
-        </dependency>
-        <!-- SpringSecurity 对 Web 应用进行权限管理 -->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
-            <version>4.2.10.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
